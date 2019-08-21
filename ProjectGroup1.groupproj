@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{F481F2CD-CE61-44F9-8308-891D6B61821C}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="appmoney.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\..\Public\Documents\Embarcadero\Studio\19.0\Samples\Object Pascal\Multi-Device Samples\User Interface\ListView\ListViewMultiDetailAppearance\SampleListViewMultiDetailAppearancePackage.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="appmoney">
+        <MSBuild Projects="appmoney.dproj"/>
+    </Target>
+    <Target Name="appmoney:Clean">
+        <MSBuild Projects="appmoney.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="appmoney:Make">
+        <MSBuild Projects="appmoney.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="SampleListViewMultiDetailAppearancePackage">
+        <MSBuild Projects="..\..\..\Public\Documents\Embarcadero\Studio\19.0\Samples\Object Pascal\Multi-Device Samples\User Interface\ListView\ListViewMultiDetailAppearance\SampleListViewMultiDetailAppearancePackage.dproj"/>
+    </Target>
+    <Target Name="SampleListViewMultiDetailAppearancePackage:Clean">
+        <MSBuild Projects="..\..\..\Public\Documents\Embarcadero\Studio\19.0\Samples\Object Pascal\Multi-Device Samples\User Interface\ListView\ListViewMultiDetailAppearance\SampleListViewMultiDetailAppearancePackage.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SampleListViewMultiDetailAppearancePackage:Make">
+        <MSBuild Projects="..\..\..\Public\Documents\Embarcadero\Studio\19.0\Samples\Object Pascal\Multi-Device Samples\User Interface\ListView\ListViewMultiDetailAppearance\SampleListViewMultiDetailAppearancePackage.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="appmoney;SampleListViewMultiDetailAppearancePackage"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="appmoney:Clean;SampleListViewMultiDetailAppearancePackage:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="appmoney:Make;SampleListViewMultiDetailAppearancePackage:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

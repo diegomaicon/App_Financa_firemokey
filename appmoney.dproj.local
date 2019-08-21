@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/09/02 15:32:40.000.678,=C:\Users\Diego\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/09/02 15:33:17.000.886,C:\Users\Diego\Documents\money\Form_Index.pas=C:\Users\Diego\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/09/02 15:33:17.000.886,C:\Users\Diego\Documents\money\Form_Index.fmx=C:\Users\Diego\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2018/09/02 15:33:33.000.342,C:\Users\Diego\Documents\money\appmoney.dproj=C:\Users\Diego\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2018/09/07 11:02:07.000.905,=C:\Users\Diego\Documents\money\Unit1.pas</Transaction>
+    <Transaction>2018/09/07 11:02:49.000.536,C:\Users\Diego\Documents\money\DataModulo.pas=C:\Users\Diego\Documents\money\Unit1.pas</Transaction>
+    <Transaction>2018/09/07 11:02:49.000.536,C:\Users\Diego\Documents\money\DataModulo.dfm=C:\Users\Diego\Documents\money\Unit1.dfm</Transaction>
+    <Transaction>2018/09/12 20:16:08.000.318,=C:\Users\Diego\Documents\money\DB\database.db</Transaction>
+    <Transaction>2018/09/12 20:17:49.000.068,C:\Users\Diego\Documents\money\DB\database.db=</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5" Android=""/>
+	</ActiveMobileDevice>
+	<BT_BuildType>Debug</BT_BuildType>
+</BorlandProject>
